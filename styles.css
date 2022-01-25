@@ -1,57 +1,63 @@
-.nav, ul {
-    text-align: left;
-    display: inline block;
-    text-decoration: none;
+a { text-decoration: none; color: white;}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+
+.nav{
     color: white;
-    list-style: none;
-    align-content: space-between;
+    background-color: black;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.theater-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.show_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20vh;
     
 }
-#navbarid {
-    text-align: center;
-    display: inline;
-    text-decoration: none;
-    list-style: none;
-}
 
-body {
-    background-color: black;
-    margin: 40px;
-}
-
-.flexbox-container {
+.all_shows {
     display: flex;
-    align-content: center;
-  
+    flex-direction: column;
+    background-color: black;
 }
 
-.flexbox-item {
-    margin: 10px;
-    border: 3px solid black;
-    background-color: white;
+.btn {
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10vh;
+    
+
+    
 }
-
-.flexbox-item-1 {
-    height: 50px;
-    width: 100%;
-    background-color: violet;
-    justify-content: space-evenly;
-
-
-.flexbox-item-2 {
-    min-height: 200px;
-    flex-direction: row;
-    background-color: blue;
-}
-
-
-.flexbox-item-3 {
-    min-height: 200px;
-    background-color: red;
-    align-content: stretch;
-
-}
-
-.flexbox-item-4 {
-    background-color: yellow;
+p {
+    font-family: 'Roboto', sans-serif;  
+    padding-left: 10vh;
+    color: white;
 }
